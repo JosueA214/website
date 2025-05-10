@@ -1,13 +1,14 @@
-const btn = document.getElementById("btn");
-const title = document.getElementById("title");
+ //const btn = document.getElementById("btn");
+ //const title = document.getElementById("title");
 
-function hello () {
-    console.log("Hello");
-    title.innerText = "Hello";
-}
-btn.addEventListener("click", hello);
+ //function hello () {
+ //    console.log("Hello");
+  //   title.innerText = "Hello";
+ //}
+ //btn.addEventListener("click", hello);
 
-const imput = document.getElementById("imput");
+const imput = document.getElementById("input");
+console.log(input)
 
 imput.addEventListener("input", (e) => {
     console.log(e.target.value);
