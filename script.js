@@ -21,4 +21,4 @@ const image = document.getElementById("image");
 generate.addEventListener("click", () => {
     const imgSrc = "https://image.pollinations.ai/prompt/" + prompt.value;
     image.src = imgSrc;
-})
+});
