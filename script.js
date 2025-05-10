@@ -7,9 +7,18 @@ function hello () {
 }
 btn.addEventListener("click", hello);
 
-const input = document.getElementById("input");
+const imput = document.getElementById("imput");
 
-input.addEventListener("input", (e) => {
+imput.addEventListener("input", (e) => {
     console.log(e.target.value);
     title.innerText = e.target.value;
 });
+
+const prompt = document.getElementById("prompt");
+const generate = document.getElementById("generate");
+const image = document.getElementById("image");
+
+generate.addEventListener("click", () => {
+    const imgSrc = "https://image.pollinations.ai/prompt/" + prompt.value;
+    image.src = imgSrc;
+})
