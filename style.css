@@ -4,3 +4,29 @@ h1 {
 button {
     background-color: rgb(0, 255, 213);
 }
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Imagen Girando</title>
+<style>
+  .imagen-girando {
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: 100px; /* Ajusta el tamaño de la imagen */
+    animation: rotar 5s linear infinite; /* Ajusta el tiempo y el efecto de rotación */
+  }
+
+  @keyframes rotar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+</head>
+<body>
+<img src="images.jpg" class="imagen-girando" alt="Imagen Girando">
+</body>
+</html>
